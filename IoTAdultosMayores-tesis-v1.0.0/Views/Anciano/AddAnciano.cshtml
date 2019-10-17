@@ -1,0 +1,72 @@
+﻿<!--
+    AddAnciano es la vista para que el usuario principal pueda agregar un nuevo adulto mayor
+    bajo su responsabilidad. Formulario con los datos del adulto mayor
+-->
+@{
+    ViewData["Title"] = "AddAnciano";
+}
+
+<h2>AddAnciano</h2>
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col">
+                <label for="inputFirstName">Primer Nombre</label>
+                <input type="text" class="form-control" name="primerNombre" placeholder="Primer Nombre" required>
+                <div class="invalid-feedback">
+                    Escriba un Nombre.
+                </div>
+            </div>
+            <div class="col">
+                <label for="inputSecondName">Segundo Nombre</label>
+                <input type="text" class="form-control" placeholder="Segundo Nombre">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 25px;">
+            <div class="col">
+                <label for="inputFirstLName">Primer Apellido</label>
+                <input type="text" class="form-control" placeholder="Primer Apellido" required>
+                <div class="invalid-feedback">
+                    Escriba un Apellido.
+                </div>
+            </div>
+            <div class="col">
+                <label for="inputSecondLName">Segundo Segundo</label>
+                <input type="text" class="form-control" placeholder="Segundo Apellido">
+            </div>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <label for="inputRelationship">Parentesco</label><!--Parentesco entre el usuario principal(quien estara llenando el formulario) y el adulto mayor que cuida-->
+            <input type="text" class="form-control" placeholder="Relacion" required>
+            <div class="invalid-feedback">
+                Escriba su relacion con el Adulto Mayor.
+            </div>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <label for="inputBirthday">Fecha de Nacimiento: </label><!--Fechah de nacimiento del adulto mayor-->
+            <input type="date" name="bday" required>
+            <div class="invalid-feedback">
+                Seleccione una Fecha de Nacimiento del Adulto Mayor.
+            </div>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <label for="NormalValues">Valores Normales</label>
+            <!--Los valores normales seran tanto el valor minimo como el valor maximo
+            que no se consideren irregulares o que no representen una complicacion para el adulto mayor
+            un ejemplo de esto seria que tenga 120/80, y esto tenga un margen +/- y aun sea algo normal para el 
+            adulto mayor-->
+            <input type="range" class="custom-range" min="0" max="150" step="1" id="valorMinimo" required><!--Valor minimo-->
+            <input type="range" class="custom-range" min="0" max="150" step="1" id="valorMaximo" required><!--Valor maximo-->
+        </div>
+        <div class="row">
+            <label for="validationTextarea">Enfermedades </label>
+            <!--Este campo sera usado para que se escriban las enfermedades o complicaciones que tengo el adulto mayor
+            es solo como un extra, le podemos cambiar el nombre, es solo para hacer mas completo el registro y sirva 
+            para cuando un tercero lo revise-->
+            <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea"></textarea>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <button type="submit" class="btn btn-primary">Terminar</button>
+        </div>
+    </form>
+</div>

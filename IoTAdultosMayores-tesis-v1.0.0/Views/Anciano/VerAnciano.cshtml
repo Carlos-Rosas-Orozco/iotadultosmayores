@@ -1,0 +1,68 @@
+﻿@Model.IoTAdultosMayores.Models.Anciano
+@{
+    ViewData["Title"] = "VerAnciano";
+}
+<!--
+    La vista es solo para poder visualizar la informacion
+    Podemos quitarla y usar solo la de edit
+-->
+<h2>VerAnciano</h2>
+<div class="container">
+    <form method="post" action="@Url.Action("save")>
+        <div class="row">
+            <div class="col">
+                <label for="inputFirstName">Primer Nombre</label>
+                <input type="text" class="form-control" placeholder="Primer Nombre" required value="@Model.An_primerNombre">
+                <div class="invalid-feedback">
+                    Escriba un Nombre.
+                </div>
+            </div>
+            <div class="col">
+                <label for="inputSecondName">Segundo Nombre</label>
+                <input type="text" class="form-control" placeholder="Segundo Nombre">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 25px;">
+            <div class="col">
+                <label for="inputFirstLName">Primer Apellido</label>
+                <input type="text" class="form-control" placeholder="Primer Apellido" required value="@Model.An_primerApellido">
+                <div class="invalid-feedback">
+                    Escriba un Apellido.
+                </div>
+            </div>
+            <div class="col">
+                <label for="inputSecondLName">Segundo Segundo</label>
+                <input type="text" class="form-control" placeholder="Segundo Apellido">
+            </div>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <label for="inputRelationship">Relacion</label>
+            <input type="text" class="form-control" placeholder="Relacion" required value="@Model.An_relacion">
+            <div class="invalid-feedback">
+                Escriba su relacion con el Adulto Mayor.
+            </div>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <label for="inputBirthday">Fecha de Nacimiento: </label>
+            <input type="date" name="bday" required value="@Model.An_fechaNacimiento">
+            <div class="invalid-feedback">
+                Seleccione una Fecha de Nacimiento.
+            </div>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <label for="NormalValues">Valores Normales</label>
+            <input type="range" class="custom-range" min="0" max="150" step="1" id="valorMinimo" required value="@Model.An_valMinNormal">
+            <input type="range" class="custom-range" min="0" max="150" step="1" id="valorMaximo" required value="@Model.An_valMaxNormal">
+            <label for="NormalValues">Valores Irregulares</label>
+            <input type="range" class="custom-range" min="0" max="150" step="1" id="valorMinimo" required value="@Model.An_valMinIrregular">
+            <input type="range" class="custom-range" min="0" max="150" step="1" id="valorMaximo" required value="@Model.An_valMaxIrregular">
+        </div>
+        <div class="row">
+            <label for="validationTextarea">Enfermedades </label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea"></textarea>
+        </div>
+        <div class="row" style="margin: 30px; margin-left: 0px;">
+            <button type="submit" class="btn btn-primary">Terminar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,62 @@
+﻿<!--
+    MainPage sera la vista principal a la que sera redireccionado el usuario una vez que acceda a su cuenta,
+    ya sea si registro de usuario o accediendo a una cuenta ya hecha previamente.
+-->
+@{
+    ViewData["Title"] = "MainPage";
+}
+
+<h2>MainPage</h2>
+<div class="container">
+    <div class="row">
+        <input type="text" name="primerNombre" id="ancianoName" value="Carlos">
+        <!--Campo de texto donde se desplegaran los nombres de los adultos mayores
+        que haya registrado el usuario principal bajo su responsabilidad
+        -->
+        <h3 style="margin: 5px;">Actividad Reciente</h3>
+        <!--Cada una de las tablas desplegara la informacion de actividades irregulares en los valores
+        del adulto mayor-->
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Hora</th><!--Hora en la que se registro el valor irregular-->
+                    <th scope="col">Fecha</th><!--Fecha en la que se registro el valor irregular-->
+                    <th scope="col">Min</th><!--Valor mas bajo monitoreado, ya sea irregular o no-->
+                    <th scope="col">Max</th><!--Valor mas alto monitoreado, ya sea irregular o no-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td> <!--Valor de Hora-->
+                    <td>Otto</td> <!--Valor de Fecha-->
+                    <td>hhh</td> <!--Valor minimo-->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <input type="text" name="primerNombre" id="ancianoName" value="Jose">
+        <h3 style="margin: 5px;">Actividad Reciente</h3>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Min</th>
+                    <th scope="col">Max</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>hhhh</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+        </div>
+    </div>

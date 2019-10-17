@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using IoTAdultosMayores_tesis_v1._0._0.Models;
+/*
+Controlador que realiza el back del log-in
+ */
 
 namespace IoTAdultosMayores_tesis_v1._0._0.Controllers
 {
@@ -14,6 +17,9 @@ namespace IoTAdultosMayores_tesis_v1._0._0.Controllers
         {
             return View();
         }
+/*
+Cada controlador regresa una vista, que corresponde al metodo
+ */
 
         public IActionResult Privacy()
         {
