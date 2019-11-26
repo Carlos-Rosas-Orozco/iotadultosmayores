@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IoT_PI.Models;
+/*
+Controlador que realiza todos los servicios del backend para las vistas y el modelo del usuario
+ */
 
 namespace IoT_PI.Controllers
 {
