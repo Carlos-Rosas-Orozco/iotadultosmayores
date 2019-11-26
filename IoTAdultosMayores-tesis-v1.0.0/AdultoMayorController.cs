@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IoT_PI.Models;
 
+/*
+Controlador que realiza todos los servicios del backend para las vistas y el modelo de la clase Anciano
+ */
+
 namespace IoT_PI.Controllers
 {
     public class AdultoMayorController : Controller
