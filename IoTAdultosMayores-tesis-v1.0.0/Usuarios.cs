@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/*
+Modelo para la conexion de la DB funcional 
+ */
+
 namespace IoT_PI.Models
 {
     public partial class Usuarios
