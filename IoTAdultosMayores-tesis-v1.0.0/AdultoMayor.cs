@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-
+/*
+Modelo para la conexion xon la BD funcional 
+ */
 namespace IoT_PI.Models
 {
     public partial class AdultoMayor
